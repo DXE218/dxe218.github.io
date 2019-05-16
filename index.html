@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Dan's Sit</title>
-  </head>
+	  <meta charset="UTF-8" />
+		<title>Dan Ellis</title>
+	  <link href="css/style.css" rel="stylesheet" />
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/slick-theme.css" rel="stylesheet" />
+	</head>
 
-  <body>
-    <header>
-    <h1>Dan</h1>
-    </header>
-    <p>This is my first webpage</p>
-    <header>
-      <img src="octocat.png" alt="octocat." />
+	<body id="home">
+
+    <div id="wrapper">
+
+  	  <header>
+  		  <h1>Dan Ellis</h1>
+  		</header>
+
+  		<nav>
+  		  <ul>
+          <li><a href="index.html">Home</a></li>
+  			  <li><a href="about.html">About</a></li>
+  				<li><a href="media.html">Media</a></li>
+  				<li><a href="press.html">Press</a></li>
+  			</ul>
+  		</nav>
+
+      <main>
+
+        <div class="gallery">
+          <div><img src="img/gallery-04-506h.jpg" alt=""></div>
+          <div><img src="img/gallery-02-506h.jpg" alt=""></div>
+          <div><img src="img/gallery-01-506h.jpg" alt=""></div>
+          <div><img src="img/gallery-03-506h.jpg" alt=""></div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <footer>
+      <p>For inquiries please contact: <a href="mailto:danpatrickellis@gmail.com">danpatrickellis@gmail.com</a>.</p>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".gallery").slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: 'linear',
+          autoplay: true,
+          autoplaySpeed: 4000,
+        });
+      });
+    </script>
+
+	</body>
+</html>
